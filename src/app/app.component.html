@@ -24,16 +24,16 @@
 
       <div class="row mb-3">
         <div class="col-3">
-          <button class="px-4 py-3 btn btn-secondary disabled">/</button>
+          <button class="px-4 py-3 btn btn-warning" (click)="divide()">/</button>
         </div>
         <div class="col-3">
-          <button class="px-4 py-3 mx-2 btn btn-secondary disabled">x</button>
+          <button class="px-4 py-3 mx-2 btn btn-warning" (click)="multiply()">x</button>
         </div>
         <div class="col-3">
-          <button class="px-4 py-3 mx-3 btn btn-secondary disabled">-</button>
+          <button class="px-4 py-3 mx-3 btn btn-warning" (click)="subtract()">-</button>
         </div>
         <div class="col-3">
-          <button class="px-4 py-3 mx-3 btn btn-warning" (click)="addToDisplay($event)">+</button>
+          <button class="px-4 py-3 mx-3 btn btn-warning" (click)="add()">+</button>
         </div>
       </div>
 
@@ -79,7 +79,7 @@
           <button class="px-5 py-3 btn btn-primary" value="0" (click)="addToMemo($event)">0</button>
         </div>
         <div class="col">
-          <button class="px-5 py-3 btn btn-success" (click)="calculateResult($event)">=</button>
+          <button class="px-5 py-3 btn btn-success" id="btn_eguals" (click)="calculateResult($event)">=</button>
         </div>
       </div>
 
